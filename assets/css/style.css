@@ -1,3 +1,47 @@
-#spanText{
-    color: green;
+header{
+    height: 8vh;
+    background-color: #06131f;
+}
+
+header>img{
+    height: 2rem;
+}
+
+main{
+    height: 92vh;
+    background-color: #1d2d3c;
+}
+
+#containerCards{
+    width: 60%;
+}
+
+.cardItem{
+    width: calc(90% / 3);
+    background-color: #112030;
+    cursor: pointer;
+}
+
+.cardItem:hover{
+    scale: 105%;
+}
+
+h4,h6,h5{
+    margin: 0;
+    padding: 0;
+}
+
+.cardItem > img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.year{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
