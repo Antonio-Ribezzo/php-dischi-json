@@ -45,3 +45,41 @@ h4,h6,h5{
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+
+/* modal */
+.modalMy{
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+.modalContent{
+    background-color: #112030;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.closeButton{
+    color: white;
+    cursor: pointer;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+.closeButton:hover{
+    scale: 130%;
+}
+
+.myStyleImg{
+    height: 20rem;
+}

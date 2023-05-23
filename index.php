@@ -19,11 +19,11 @@
                 <img class="ms-5" src="./assets/img/logo.svg" alt="logoSpotify">
             </header>
 
-            <main class="d-flex justify-content-center align-items-center">
+            <main class="d-flex justify-content-center align-items-center position-relative">
                 <!-- containeer-cards  -->
-                <div id="containerCards" class="d-flex justify-content-between align-itams-start flex-wrap py-5">
+                <div id="containerCards" class="d-flex justify-content-between align-itams-start flex-wrap">
                     <!-- singola card  -->
-                    <div v-for="(el,i) in data" class="cardItem text-white d-flex flex-column justify-content-center align-items-center gap-3 rounded px-2 py-3 mb-4">
+                    <div v-for="(el,i) in data" class="cardItem text-white d-flex flex-column justify-content-center align-items-center gap-3 rounded px-2 py-3 mb-4" @click="modalCardActive(i)" :id="'card'+i">
                         <img class="img-fluid" :src="el.poster" :alt="el.title">
                         <div class="d-flex flex-column justify-content-start align-items-center">
                             <span class="title text-center">{{el.title}}</span>
