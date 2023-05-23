@@ -1,5 +1,4 @@
 <?php
-
     $arrayCd = [
         [
           'title' => 'New Jersey',
@@ -42,9 +41,11 @@
           'year' => 2002,
           'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
           'genre' => 'Rock',
-        ],
+        ]
     ];
 
     header( 'Content-type: application/json' );
 
     echo json_encode( $arrayCd );
+
+?>

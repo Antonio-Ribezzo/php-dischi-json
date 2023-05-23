@@ -23,12 +23,12 @@
                 <!-- containeer-cards  -->
                 <div id="containerCards" class="d-flex justify-content-between align-itams-start flex-wrap py-5">
                     <!-- singola card  -->
-                    <div v-for="n in 6" class="cardItem text-white d-flex flex-column justify-content-center align-items-center gap-3 rounded px-2 py-3 mb-4">
-                        <img class="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg" alt="">
+                    <div v-for="(el,i) in data" class="cardItem text-white d-flex flex-column justify-content-center align-items-center gap-3 rounded px-2 py-3 mb-4">
+                        <img class="img-fluid" :src="el.poster" :alt="el.title">
                         <div class="d-flex flex-column justify-content-start align-items-center">
-                            <span class="title">New Jersey</span>
-                            <span class="artist my-1">Bon Jovi</span>
-                            <span class="year">1988</span>
+                            <span class="title text-center">{{el.title}}</span>
+                            <span class="artist my-1">{{el.author}}</span>
+                            <span class="year">{{el.year}}</span>
                         </div>
                     </div>
                 </div>
@@ -38,11 +38,11 @@
     <!-- script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-    <!-- script axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- script vue js  -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- script axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- my script js -->
-    <script src='./assets/js/main.js'></script>
+    <script src='main.js'></script>
 </body>
 </html>
