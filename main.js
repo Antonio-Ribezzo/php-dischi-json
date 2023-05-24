@@ -5,7 +5,6 @@ const { createApp } = Vue
       return {
         apiPath: 'server.php',
         data:'',
-        counter: 0,
         bool: false
       }
     },
@@ -20,7 +19,6 @@ const { createApp } = Vue
         },
 
         modalCardActive(i){
-          this.counter = i
           let card = document.querySelector('#containerCards')
 
           card.innerHTML += 
